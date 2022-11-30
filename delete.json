@@ -7,8 +7,8 @@
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3586833635",
-  "run_number": "61",
+  "run_id": "3586833827",
+  "run_number": "62",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -23,8 +23,8 @@
   "event_name": "delete",
   "event": {
     "pusher_type": "user",
-    "ref": "sample-branch",
-    "ref_type": "branch",
+    "ref": "sample-tag",
+    "ref_type": "tag",
     "repository": {
       "allow_forking": true,
       "archive_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/{archive_format}{/ref}",
@@ -104,7 +104,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-      "pushed_at": "2022-11-30T20:25:55Z",
+      "pushed_at": "2022-11-30T20:25:57Z",
       "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
       "size": 46,
       "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -160,9 +160,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_43aa7b47-4981-4ca1-9e02-57248c1672d8",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_43aa7b47-4981-4ca1-9e02-57248c1672d8",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_43aa7b47-4981-4ca1-9e02-57248c1672d8",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_43aa7b47-4981-4ca1-9e02-57248c1672d8",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_43aa7b47-4981-4ca1-9e02-57248c1672d8"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_ce1bb441-8725-4cad-9ca6-ff9fe42c78de",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_ce1bb441-8725-4cad-9ca6-ff9fe42c78de",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_ce1bb441-8725-4cad-9ca6-ff9fe42c78de",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_ce1bb441-8725-4cad-9ca6-ff9fe42c78de",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_ce1bb441-8725-4cad-9ca6-ff9fe42c78de"
 }
