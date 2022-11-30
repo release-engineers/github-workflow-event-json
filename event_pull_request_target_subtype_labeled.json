@@ -7,8 +7,8 @@
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3586599409",
-  "run_number": "33",
+  "run_id": "3586599390",
+  "run_number": "31",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -24,13 +24,13 @@
   "event": {
     "action": "labeled",
     "label": {
-      "color": "a2eeef",
+      "color": "d73a4a",
       "default": true,
-      "description": "New feature or request",
-      "id": 4857949230,
-      "name": "enhancement",
-      "node_id": "LA_kwDOIh-l6s8AAAABIY5sLg",
-      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/enhancement"
+      "description": "Something isn't working",
+      "id": 4857949223,
+      "name": "bug",
+      "node_id": "LA_kwDOIh-l6s8AAAABIY5sJw",
+      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/bug"
     },
     "number": 2,
     "pull_request": {
@@ -600,9 +600,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_76447057-da72-49aa-bf57-c64babadf147",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_76447057-da72-49aa-bf57-c64babadf147",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_76447057-da72-49aa-bf57-c64babadf147",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_76447057-da72-49aa-bf57-c64babadf147",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_76447057-da72-49aa-bf57-c64babadf147"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_9496c8ae-5492-4d66-ba43-9c71b5756c61",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_9496c8ae-5492-4d66-ba43-9c71b5756c61",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_9496c8ae-5492-4d66-ba43-9c71b5756c61",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_9496c8ae-5492-4d66-ba43-9c71b5756c61",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_9496c8ae-5492-4d66-ba43-9c71b5756c61"
 }
