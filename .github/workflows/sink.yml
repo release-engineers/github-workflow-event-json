@@ -162,16 +162,16 @@ jobs:
           fi
 
           # if CONTEXT_GITHUB_EVENT_NAME == workflow_dispatch;
-          # write job, steps, runner, secrets, strategy, matrix, needs, inputs to common_${type}.json
+          # write job, steps, runner, secrets, strategy, matrix, needs, inputs to context_${type}.json
           if [ "${CONTEXT_GITHUB_EVENT_NAME}" == "workflow_dispatch" ]; then
-            echo "${CONTEXT_JOB}" > "common_job.json"
-            echo "${CONTEXT_STEPS}" > "common_steps.json"
-            echo "${CONTEXT_RUNNER}" > "common_runner.json"
-            echo "${CONTEXT_SECRETS}" > "common_secrets.json"
-            echo "${CONTEXT_STRATEGY}" > "common_strategy.json"
-            echo "${CONTEXT_MATRIX}" > "common_matrix.json"
-            echo "${CONTEXT_NEEDS}" > "common_needs.json"
-            echo "${CONTEXT_INPUTS}" > "common_inputs.json"
+            echo "${CONTEXT_JOB}" > "context_job.json"
+            echo "${CONTEXT_STEPS}" > "context_steps.json"
+            echo "${CONTEXT_RUNNER}" > "context_runner.json"
+            echo "${CONTEXT_SECRETS}" > "context_secrets.json"
+            echo "${CONTEXT_STRATEGY}" > "context_strategy.json"
+            echo "${CONTEXT_MATRIX}" > "context_matrix.json"
+            echo "${CONTEXT_NEEDS}" > "context_needs.json"
+            echo "${CONTEXT_INPUTS}" > "context_inputs.json"
           fi
 
           # replace GITHUB_TOKEN in all files with ***

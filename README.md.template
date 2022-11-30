@@ -13,47 +13,47 @@ For example, event `pull_request_target` with type `closed` can be found as [pul
 ## `inputs`
 
 ```json
-{{ load('common_inputs.json') }}
+{{ load('context_inputs.json') }}
 ```
 
 ## `jobs`
 
 ```json
-{{ load('common_job.json') }}
+{{ load('context_job.json') }}
 ```
 
 ## `matrix`
 
 ```json
-{{ load('common_matrix.json') }}
+{{ load('context_matrix.json') }}
 ```
 
 ## `needs`
 
 ```json
-{{ load('common_needs.json') }}
+{{ load('context_needs.json') }}
 ```
 
 ## `runner`
 
 ```json
-{{ load('common_runner.json') }}
+{{ load('context_runner.json') }}
 ```
 
 ## `secrets`
 
 ```json
-{{ load('common_secrets.json') }}
+{{ load('context_secrets.json') }}
 ```
 
 ## `steps`
 
 ```json
-{{ load('common_steps.json') }}
+{{ load('context_steps.json') }}
 ```
 
 ## `strategy`
 
 ```json
-{{ load('common_strategy.json') }}
+{{ load('context_strategy.json') }}
 ```
