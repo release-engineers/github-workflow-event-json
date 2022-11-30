@@ -24,6 +24,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - id: sample_step_1
+        run: |
+          echo "sample_output_1=123" >> "${GITHUB_OUTPUT}"
+          echo "sample_output_2=456" >> "${GITHUB_OUTPUT}"
+      - id: sample_step_2
+        run: |
+          echo "sample_output_1=789" >> "${GITHUB_OUTPUT}"
+          echo "sample_output_2=0" >> "${GITHUB_OUTPUT}"
       - env:
           CONTEXT_GITHUB: ${{ toJson(github) }}
           CONTEXT_GITHUB_EVENT_NAME: ${{ github.event_name }}
