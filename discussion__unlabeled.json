@@ -7,8 +7,8 @@
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3587516269",
-  "run_number": "78",
+  "run_id": "3587516272",
+  "run_number": "79",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -88,13 +88,13 @@
       }
     },
     "label": {
-      "color": "cfd3d7",
+      "color": "0075ca",
       "default": true,
-      "description": "This issue or pull request already exists",
-      "id": 4857949226,
-      "name": "duplicate",
-      "node_id": "LA_kwDOIh-l6s8AAAABIY5sKg",
-      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/duplicate"
+      "description": "Improvements or additions to documentation",
+      "id": 4857949225,
+      "name": "documentation",
+      "node_id": "LA_kwDOIh-l6s8AAAABIY5sKQ",
+      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/documentation"
     },
     "repository": {
       "allow_forking": true,
@@ -231,9 +231,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_0a17193d-accf-4597-80b0-1a27acce0888",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_0a17193d-accf-4597-80b0-1a27acce0888",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_0a17193d-accf-4597-80b0-1a27acce0888",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_0a17193d-accf-4597-80b0-1a27acce0888",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_0a17193d-accf-4597-80b0-1a27acce0888"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_fc34ff34-5c1a-4ba9-83f8-9122e699f692",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_fc34ff34-5c1a-4ba9-83f8-9122e699f692",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_fc34ff34-5c1a-4ba9-83f8-9122e699f692",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_fc34ff34-5c1a-4ba9-83f8-9122e699f692",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_fc34ff34-5c1a-4ba9-83f8-9122e699f692"
 }
