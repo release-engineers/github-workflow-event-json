@@ -1,6 +1,11 @@
 {
   "sample_needs": {
     "result": "success",
-    "outputs": {}
+    "outputs": {
+      "sample_output_1": "123",
+      "sample_output_2": "456",
+      "sample_output_3": "789",
+      "sample_output_4": "0"
+    }
   }
 }
