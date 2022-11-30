@@ -7,8 +7,8 @@
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3587508214",
-  "run_number": "66",
+  "run_id": "3587508573",
+  "run_number": "68",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -38,13 +38,13 @@
       "id": 1470284854,
       "labels": [
         {
-          "color": "d73a4a",
+          "color": "0075ca",
           "default": true,
-          "description": "Something isn't working",
-          "id": 4857949223,
-          "name": "bug",
-          "node_id": "LA_kwDOIh-l6s8AAAABIY5sJw",
-          "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/bug"
+          "description": "Improvements or additions to documentation",
+          "id": 4857949225,
+          "name": "documentation",
+          "node_id": "LA_kwDOIh-l6s8AAAABIY5sKQ",
+          "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/documentation"
         }
       ],
       "labels_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/4/labels{/name}",
@@ -70,7 +70,7 @@
       "state_reason": null,
       "timeline_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/4/timeline",
       "title": "Sample issue",
-      "updated_at": "2022-11-30T22:11:48Z",
+      "updated_at": "2022-11-30T22:11:52Z",
       "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/4",
       "user": {
         "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
@@ -94,13 +94,13 @@
       }
     },
     "label": {
-      "color": "d73a4a",
+      "color": "0075ca",
       "default": true,
-      "description": "Something isn't working",
-      "id": 4857949223,
-      "name": "bug",
-      "node_id": "LA_kwDOIh-l6s8AAAABIY5sJw",
-      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/bug"
+      "description": "Improvements or additions to documentation",
+      "id": 4857949225,
+      "name": "documentation",
+      "node_id": "LA_kwDOIh-l6s8AAAABIY5sKQ",
+      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/labels/documentation"
     },
     "repository": {
       "allow_forking": true,
@@ -237,9 +237,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_1f99c94e-567d-4f7d-9f08-ca7d13c72172",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_1f99c94e-567d-4f7d-9f08-ca7d13c72172",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_1f99c94e-567d-4f7d-9f08-ca7d13c72172",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_1f99c94e-567d-4f7d-9f08-ca7d13c72172",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_1f99c94e-567d-4f7d-9f08-ca7d13c72172"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_184690cc-20ce-48a3-8a6c-1aba426a184e",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_184690cc-20ce-48a3-8a6c-1aba426a184e",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_184690cc-20ce-48a3-8a6c-1aba426a184e",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_184690cc-20ce-48a3-8a6c-1aba426a184e",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_184690cc-20ce-48a3-8a6c-1aba426a184e"
 }
