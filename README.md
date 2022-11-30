@@ -6,9 +6,9 @@ Any activity on this repository is recorded by [.github/workflows/sink.yml](.git
 ## `github`
 
 This GitHub Actions context variable contains the event payload, it will be different based on what kind of event triggered a workflow.
-You can find it in the file `event_${event}_subtype_${type}.json`, or when no type exists, `event_${event}.json`.
+You can find it in the `${event}__${action}).json` or when the event has no action types, `${event}.json`.
 
-For example, event `pull_request_target` with type `closed` can be found as [event_pull_request_target_subtype_closed.json](./event_pull_request_target_subtype_closed.json)
+For example, event `pull_request_target` with type `closed` can be found as [pull_request_target__closed.json](./pull_request_target__closed.json)
 
 ## `inputs`
 
@@ -62,7 +62,7 @@ For example, event `pull_request_target` with type `closed` can be found as [eve
 {
   "os": "Linux",
   "arch": "X64",
-  "name": "Hosted Agent",
+  "name": "GitHub Actions 3",
   "tool_cache": "/opt/hostedtoolcache",
   "temp": "/home/runner/work/_temp",
   "workspace": "/home/runner/work/github-workflow-event-json"
@@ -74,8 +74,8 @@ For example, event `pull_request_target` with type `closed` can be found as [eve
 
 ```json
 {
-  "github_token": "***",
-  "SAMPLE_SECRET": "This is an example value"
+  "SAMPLE_SECRET": "This is an example value",
+  "github_token": "***"
 }
 
 ```
