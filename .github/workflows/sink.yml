@@ -46,17 +46,6 @@ jobs:
           CONTEXT_NEEDS: ${{ toJson(needs) }}
           CONTEXT_INPUTS: ${{ toJson(inputs) }}
         run: |
-          echo "github: $CONTEXT_GITHUB"
-          echo "env: $CONTEXT_ENV"
-          echo "job: $CONTEXT_JOB"
-          echo "steps: $CONTEXT_STEPS"
-          echo "runner: $CONTEXT_RUNNER"
-          echo "secrets: $CONTEXT_SECRETS"
-          echo "strategy: $CONTEXT_STRATEGY"
-          echo "matrix: $CONTEXT_MATRIX"
-          echo "needs: $CONTEXT_NEEDS"
-          echo "inputs: $CONTEXT_INPUTS"
-
           # based on github.event_name write to file event_${github.event_name}.json
           echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}.json"
 
