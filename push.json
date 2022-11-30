@@ -2,13 +2,13 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "256989fd0fdd3b7992c93073ae803cad6b44a4a5",
+  "sha": "d0ba04975a3645cd0e11eb188ed771b75c2cac3f",
   "repository": "SkPhilipp/github-workflow-event-json",
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3587557513",
-  "run_number": "112",
+  "run_id": "3587565975",
+  "run_number": "113",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -22,9 +22,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "256989fd0fdd3b7992c93073ae803cad6b44a4a5",
+    "after": "d0ba04975a3645cd0e11eb188ed771b75c2cac3f",
     "base_ref": null,
-    "before": "e779ff148730792f55b4c90dea922bf4e95c8584",
+    "before": "841356f22e601a7d811e3ba15726b6835457c37a",
     "commits": [
       {
         "author": {
@@ -38,14 +38,14 @@
           "username": "SkPhilipp"
         },
         "distinct": true,
-        "id": "256989fd0fdd3b7992c93073ae803cad6b44a4a5",
+        "id": "d0ba04975a3645cd0e11eb188ed771b75c2cac3f",
         "message": "Updated README.md.template",
-        "timestamp": "2022-11-30T23:19:32+01:00",
-        "tree_id": "103b81c02eea73e73d32de22109d0c8ceb059dab",
-        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/256989fd0fdd3b7992c93073ae803cad6b44a4a5"
+        "timestamp": "2022-11-30T23:20:57+01:00",
+        "tree_id": "59568fbbc04d953fd002cbe972d1ba8281320d1f",
+        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/d0ba04975a3645cd0e11eb188ed771b75c2cac3f"
       }
     ],
-    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/e779ff148730...256989fd0fdd",
+    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/841356f22e60...d0ba04975a36",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -61,11 +61,11 @@
         "username": "SkPhilipp"
       },
       "distinct": true,
-      "id": "256989fd0fdd3b7992c93073ae803cad6b44a4a5",
+      "id": "d0ba04975a3645cd0e11eb188ed771b75c2cac3f",
       "message": "Updated README.md.template",
-      "timestamp": "2022-11-30T23:19:32+01:00",
-      "tree_id": "103b81c02eea73e73d32de22109d0c8ceb059dab",
-      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/256989fd0fdd3b7992c93073ae803cad6b44a4a5"
+      "timestamp": "2022-11-30T23:20:57+01:00",
+      "tree_id": "59568fbbc04d953fd002cbe972d1ba8281320d1f",
+      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/d0ba04975a3645cd0e11eb188ed771b75c2cac3f"
     },
     "pusher": {
       "email": "philipp@hileco.com",
@@ -154,7 +154,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-      "pushed_at": 1669846782,
+      "pushed_at": 1669846863,
       "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
       "size": 80,
       "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -205,15 +205,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "SkPhilipp/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "256989fd0fdd3b7992c93073ae803cad6b44a4a5",
+  "workflow_sha": "d0ba04975a3645cd0e11eb188ed771b75c2cac3f",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_82b36372-a03b-436d-835f-39852c534fad",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_82b36372-a03b-436d-835f-39852c534fad",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_82b36372-a03b-436d-835f-39852c534fad",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_82b36372-a03b-436d-835f-39852c534fad",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_82b36372-a03b-436d-835f-39852c534fad"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_b2903cc7-42cb-414c-b373-0375424c23e5",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_b2903cc7-42cb-414c-b373-0375424c23e5",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_b2903cc7-42cb-414c-b373-0375424c23e5",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_b2903cc7-42cb-414c-b373-0375424c23e5",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_b2903cc7-42cb-414c-b373-0375424c23e5"
 }
