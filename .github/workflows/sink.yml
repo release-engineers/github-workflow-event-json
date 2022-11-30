@@ -154,11 +154,11 @@ jobs:
           CONTEXT_NEEDS: ${{ toJson(needs) }}
           CONTEXT_INPUTS: ${{ toJson(inputs) }}
         run: |
-          # based on github.event_name write to file event_${github.event_name}.json
+          # based on github.event_name write to file ${github.event_name}.json
           if [ -n "${CONTEXT_GITHUB_EVENT_ACTION_NAME}" ]; then
-            echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}_subtype_${CONTEXT_GITHUB_EVENT_ACTION_NAME}.json"
+            echo "${CONTEXT_GITHUB}" > "${CONTEXT_GITHUB_EVENT_NAME}__${CONTEXT_GITHUB_EVENT_ACTION_NAME}.json"
           else
-            echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}.json"
+            echo "${CONTEXT_GITHUB}" > "${CONTEXT_GITHUB_EVENT_NAME}.json"
           fi
 
           # if CONTEXT_GITHUB_EVENT_NAME == workflow_dispatch;
