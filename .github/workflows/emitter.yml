@@ -17,5 +17,5 @@ jobs:
           repository: SkPhilipp/github-workflow-event-json
           ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
-        run: |
+      - run: |
           echo "OK"
