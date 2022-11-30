@@ -142,6 +142,7 @@ jobs:
       - env:
           CONTEXT_GITHUB: ${{ toJson(github) }}
           CONTEXT_GITHUB_EVENT_NAME: ${{ github.event_name }}
+          CONTEXT_GITHUB_EVENT_ACTION_NAME: ${{ github.event.action }}
           CONTEXT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTEXT_ENV: ${{ toJson(env) }}
           CONTEXT_JOB: ${{ toJson(job) }}
@@ -154,7 +155,11 @@ jobs:
           CONTEXT_INPUTS: ${{ toJson(inputs) }}
         run: |
           # based on github.event_name write to file event_${github.event_name}.json
-          echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}.json"
+          if [ -n "${CONTEXT_GITHUB_EVENT_ACTION_NAME}" ]; then
+            echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}_action_${CONTEXT_GITHUB_EVENT_ACTION_NAME}.json"
+          else
+            echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}.json"
+          fi
 
           # if CONTEXT_GITHUB_EVENT_NAME == workflow_dispatch;
           # write job, steps, runner, secrets, strategy, matrix, needs, inputs to common_${type}.json
