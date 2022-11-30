@@ -22,7 +22,7 @@ jobs:
       # github, env, job, jobs, steps, runner, secrets, strategy, matrix, needs, inputs
       CONTEXT_GITHUB: ${{ toJson(github) }}
       # CONTEXT_ENV: ${{ toJson(env) }}
-      CONTEXT_JOB_CONTAINER: ${{ toJson(job.container) }}
+      # CONTEXT_JOB: ${{ toJson(job) }}
       CONTEXT_JOBS: ${{ toJson(jobs) }}
       CONTEXT_STEPS: ${{ toJson(steps) }}
       CONTEXT_RUNNER: ${{ toJson(runner) }}
