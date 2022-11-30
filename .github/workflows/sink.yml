@@ -6,6 +6,8 @@ on:
       sample_input_2:
         default: 456
 
+permissions: write-all
+
 jobs:
   sample_needs:
     runs-on: ubuntu-latest
@@ -19,8 +21,13 @@ jobs:
         sample_matrix_var_1: [ 1 ]
         sample_matrix_var_2: [ foo ]
     steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - env:
           CONTEXT_GITHUB: ${{ toJson(github) }}
+          CONTEXT_GITHUB_EVENT_NAME: ${{ github.event_name }}
+          CONTEXT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTEXT_ENV: ${{ toJson(env) }}
           CONTEXT_JOB: ${{ toJson(job) }}
           CONTEXT_STEPS: ${{ toJson(steps) }}
@@ -41,3 +48,29 @@ jobs:
           echo "matrix: $CONTEXT_MATRIX"
           echo "needs: $CONTEXT_NEEDS"
           echo "inputs: $CONTEXT_INPUTS"
+
+          # based on github.event_name write to file event_${github.event_name}.json
+          echo "${CONTEXT_GITHUB}" > "event_${CONTEXT_GITHUB_EVENT_NAME}.json"
+
+          # if CONTEXT_GITHUB_EVENT_NAME == workflow_dispatch;
+          # write job, steps, runner, secrets, strategy, matrix, needs, inputs to common_${type}.json
+          if [ "${CONTEXT_GITHUB_EVENT_NAME}" == "workflow_dispatch" ]; then
+            echo "${CONTEXT_JOB}" > "common_job.json"
+            echo "${CONTEXT_STEPS}" > "common_steps.json"
+            echo "${CONTEXT_RUNNER}" > "common_runner.json"
+            echo "${CONTEXT_SECRETS}" > "common_secrets.json"
+            echo "${CONTEXT_STRATEGY}" > "common_strategy.json"
+            echo "${CONTEXT_MATRIX}" > "common_matrix.json"
+            echo "${CONTEXT_NEEDS}" > "common_needs.json"
+            echo "${CONTEXT_INPUTS}" > "common_inputs.json"
+          fi
+
+          # replace GITHUB_TOKEN in all files with ***
+          sed -i "s/${CONTEXT_GITHUB_TOKEN}/***/g" *.json
+
+          # git config, git add, git commit, git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update files"
+          git push
