@@ -1,11 +1,110 @@
+name: Event Sink
+
 on:
+  # Runs your workflow when branch protection rules in the workflow repository are changed.
+  branch_protection_rule:
+    types: [ created, edited, deleted ]
+  # Runs your workflow when activity related to a check run occurs.
+  check_run:
+    types: [ rerequested, completed ]
+  # Runs your workflow when check suite activity occurs.
+  check_suite:
+    types: [ completed ]
+  # Runs your workflow when someone creates a Git reference (Git branch or tag) in the workflow's repository.
+  create:
+  # Runs your workflow when someone deletes a Git reference (Git branch or tag) in the workflow's repository.
+  delete:
+  # Runs your workflow when someone creates a deployment in the workflow's repository.
+  deployment:
+  # Runs your workflow when a third party provides a deployment status.
+  deployment_status:
+  # Runs your workflow when a discussion in the workflow's repository is created or modified.
+  discussion:
+    types: [ created, edited, deleted, transferred, pinned, unpinned, labeled, unlabeled, locked, unlocked, category_changed, answered, unanswered ]
+  # Runs your workflow when a comment on a discussion in the workflow's repository is created or modified.
+  discussion_comment:
+    types: [ created, edited, deleted ]
+  # Runs your workflow when someone forks a repository.
+  fork:
+  # Runs your workflow when someone creates or updates a Wiki page.
+  gollum:
+  # Runs your workflow when an issue or pull request comment is created, edited, or deleted.
+  # !! Note: "edited" is not an option according to the same documentation.
+  # !! Note: Formerly pull_request_comment, presently issue_comment. (Subtle joke).
+  issue_comment:
+    types: [ created, deleted ]
+  # Runs your workflow when an issue in the workflow's repository is created or modified.
+  issues:
+    types: [ opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, locked, unlocked, milestoned, demilestoned ]
+  # Runs your workflow when a label in your workflow's repository is created or modified.
+  label:
+    types: [ created, edited, deleted ]
+  # Runs your workflow when a pull request is added to a merge queue, which adds the pull request to a merge group.
+  merge_group:
+    types: [ checks_requested ]
+  # Runs your workflow when a milestone in the workflow's repository is created or modified.
+  milestone:
+    types: [ created, closed, opened, edited, deleted ]
+  # Runs your workflow when someone pushes to a branch that is the publishing source for GitHub Pages, if GitHub Pages is enabled for the repository.
+  page_build:
+  # Runs your workflow when a project board is created or modified.
+  project:
+    types: [ created, closed, reopened, edited, deleted ]
+  # Runs your workflow when a card on a project board is created or modified.
+  project_card:
+    types: [ created, moved, converted, edited, deleted ]
+  # Runs your workflow when a column on a project board is created or modified.
+  project_column:
+    types: [ created, updated, moved, deleted ]
+  # Runs your workflow when your workflow's repository changes from private to public.
+  public:
+  # Runs your workflow when activity on a pull request in the workflow's repository occurs.
+  pull_request:
+    types: [ assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronize, converted_to_draft, ready_for_review, locked, unlocked, review_requested, review_request_removed, auto_merge_enabled, auto_merge_disabled ]
+  # Runs your workflow when a pull request review is submitted, edited, or dismissed.
+  pull_request_review:
+    types: [ submitted, edited, dismissed ]
+  # Runs your workflow when a pull request review comment is modified.
+  pull_request_review_comment:
+    types: [ created, edited, deleted ]
+  # Runs your workflow when activity on a pull request in the workflow's repository occurs.
+  pull_request_target:
+    types: [ assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronize, converted_to_draft, ready_for_review, locked, unlocked, review_requested, review_request_removed, auto_merge_enabled, auto_merge_disabled ]
+  # Runs your workflow when you push a commit or tag.
+  push:
+  # Runs your workflow when activity related to GitHub Packages occurs in your repository.
+  registry_package:
+    types: [ published, updated ]
+  # Runs your workflow when release activity in your repository occurs.
+  release:
+    types: [ published, unpublished, created, edited, deleted, prereleased, released ]
+  # You can use the GitHub API to trigger a webhook event called repository_dispatch when you want to trigger a workflow for activity that happens outside of GitHub.
+  repository_dispatch:
+    types: [ example_type ]
+  # The schedule event allows you to trigger a workflow at a scheduled time.
+  schedule:
+    # “At 00:00 on Sunday.” t. crontab.guru
+    - cron: '0 0 * * 0'
+  # Runs your workflow when the status of a Git commit changes. For example, commits can be marked as error, failure, pending, or success.
+  status:
+  # Runs your workflow when the workflow's repository is starred.
+  watch:
+    types: [ started ]
+  # --- Omitted event ---
+  # workflow_call is used to indicate that a workflow can be called by another workflow. When a workflow is triggered with the workflow_call event, the event payload in the called workflow is the same event payload from the calling workflow.
+  # workflow_call:
+  # ---------------------
+  # To manually trigger a workflow, use the workflow_dispatch event.
   workflow_dispatch:
     inputs:
       sample_input_1:
         default: 123
       sample_input_2:
         default: 456
-
+  # This event occurs when a workflow run is requested or completed.
+  workflow_run:
+    workflows: [ "Event Emitter" ]
+    types: [ requested, completed, in_progress ]
 
 permissions:
   contents: write
@@ -37,6 +136,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          repository: SkPhilipp/github-workflow-event-json
+          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
       - env:
           CONTEXT_GITHUB: ${{ toJson(github) }}
@@ -75,5 +176,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add *.json
-          git commit -m "Update from ${CONTEXT_GITHUB_EVENT_NAME} event"
+          git commit --no-verify -m "Update from ${CONTEXT_GITHUB_EVENT_NAME} event"
           git push

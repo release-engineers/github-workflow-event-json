@@ -1,0 +1,21 @@
+name: Event Emitter
+
+on:
+  schedule:
+    # “At 00:00 on Sunday.” t. crontab.guru
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: SkPhilipp/github-workflow-event-json
+          ref: master
+          token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "OK"
