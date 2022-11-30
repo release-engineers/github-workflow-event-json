@@ -2,13 +2,13 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "02b4322049a3906df91859c6763e71e309f76b42",
+  "sha": "fa531048ef054cd7d892099b19560a22dad0c4fa",
   "repository": "SkPhilipp/github-workflow-event-json",
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3586726305",
-  "run_number": "46",
+  "run_id": "3586741924",
+  "run_number": "47",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -22,9 +22,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "02b4322049a3906df91859c6763e71e309f76b42",
+    "after": "fa531048ef054cd7d892099b19560a22dad0c4fa",
     "base_ref": null,
-    "before": "65964cc40a3208bb333f182888c57d4f1dae4986",
+    "before": "e007c76e8256b155f31b44823f52ad05b6aff2ed",
     "commits": [
       {
         "author": {
@@ -38,14 +38,14 @@
           "username": "web-flow"
         },
         "distinct": true,
-        "id": "02b4322049a3906df91859c6763e71e309f76b42",
-        "message": "Update and rename README.md to README.md.template",
-        "timestamp": "2022-11-30T21:09:46+01:00",
-        "tree_id": "d81540f143f1b974e82cdd01873005200f592b4d",
-        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/02b4322049a3906df91859c6763e71e309f76b42"
+        "id": "fa531048ef054cd7d892099b19560a22dad0c4fa",
+        "message": "Create generate-readme.yml",
+        "timestamp": "2022-11-30T21:12:03+01:00",
+        "tree_id": "f31f097dda829b166098aa4711ba929a415f15a3",
+        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/fa531048ef054cd7d892099b19560a22dad0c4fa"
       }
     ],
-    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/65964cc40a32...02b4322049a3",
+    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/e007c76e8256...fa531048ef05",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -61,11 +61,11 @@
         "username": "web-flow"
       },
       "distinct": true,
-      "id": "02b4322049a3906df91859c6763e71e309f76b42",
-      "message": "Update and rename README.md to README.md.template",
-      "timestamp": "2022-11-30T21:09:46+01:00",
-      "tree_id": "d81540f143f1b974e82cdd01873005200f592b4d",
-      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/02b4322049a3906df91859c6763e71e309f76b42"
+      "id": "fa531048ef054cd7d892099b19560a22dad0c4fa",
+      "message": "Create generate-readme.yml",
+      "timestamp": "2022-11-30T21:12:03+01:00",
+      "tree_id": "f31f097dda829b166098aa4711ba929a415f15a3",
+      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/fa531048ef054cd7d892099b19560a22dad0c4fa"
     },
     "pusher": {
       "email": "philipp@hileco.com",
@@ -154,7 +154,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-      "pushed_at": 1669838986,
+      "pushed_at": 1669839123,
       "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
       "size": 46,
       "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -205,15 +205,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "SkPhilipp/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "02b4322049a3906df91859c6763e71e309f76b42",
+  "workflow_sha": "fa531048ef054cd7d892099b19560a22dad0c4fa",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_d3d4d383-43d5-49d3-b0b7-8277c9418ef2",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_d3d4d383-43d5-49d3-b0b7-8277c9418ef2",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_d3d4d383-43d5-49d3-b0b7-8277c9418ef2",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_d3d4d383-43d5-49d3-b0b7-8277c9418ef2",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_d3d4d383-43d5-49d3-b0b7-8277c9418ef2"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_578aaefc-1af9-42e6-8311-3b2a4e559432",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_578aaefc-1af9-42e6-8311-3b2a4e559432",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_578aaefc-1af9-42e6-8311-3b2a4e559432",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_578aaefc-1af9-42e6-8311-3b2a4e559432",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_578aaefc-1af9-42e6-8311-3b2a4e559432"
 }
