@@ -1,6 +1,9 @@
 name: Generate README.md
 
 on:
+  schedule:
+    # “At 01:00 on Sunday.” t. crontab.guru
+    - cron: '0 1 * * 0'
   push:
     branches:
       - master
