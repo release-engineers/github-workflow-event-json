@@ -1,0 +1,23 @@
+on:
+  workflow_dispatch:
+    inputs:
+      sample_input_1:
+        default: 123
+      sample_input_2:
+        default: 456
+
+jobs:
+  sample_needs:
+    steps:
+      - run: echo Ok
+  update:
+    needs: [sample_needs]
+    strategy:
+      matrix:
+        sample_matrix_var_1: [1]
+        sample_matrix_var_2: [foo]
+    env:
+      # github, env, job, jobs, steps, runner, secrets, strategy, matrix, needs, inputs
+      CONTEXT_INPUTS: ${{ toJson(inputs) }}
+    steps:
+      - run: env
