@@ -2,13 +2,13 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "e7ae78e107fa2ed358aa05f667c9c1726b0d320b",
+  "sha": "2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71",
   "repository": "SkPhilipp/github-workflow-event-json",
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3586617554",
-  "run_number": "43",
+  "run_id": "3586619196",
+  "run_number": "45",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -22,9 +22,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "e7ae78e107fa2ed358aa05f667c9c1726b0d320b",
+    "after": "2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71",
     "base_ref": null,
-    "before": "d8df0d02ca067e5232961a9eb3e09132e5abc7ce",
+    "before": "e7ae78e107fa2ed358aa05f667c9c1726b0d320b",
     "commits": [
       {
         "author": {
@@ -37,33 +37,15 @@
           "name": "GitHub",
           "username": "web-flow"
         },
-        "distinct": false,
-        "id": "b92630fdb52c84d9ff78ebf4102c21eec41a506a",
-        "message": "Create sample.yml",
-        "timestamp": "2022-11-30T20:49:09+01:00",
-        "tree_id": "054aab8292e94f17880bd870d84f5d2ef9f6b807",
-        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/b92630fdb52c84d9ff78ebf4102c21eec41a506a"
-      },
-      {
-        "author": {
-          "email": "philipp@hileco.com",
-          "name": "Philipp Gayret",
-          "username": "SkPhilipp"
-        },
-        "committer": {
-          "email": "noreply@github.com",
-          "name": "GitHub",
-          "username": "web-flow"
-        },
         "distinct": true,
-        "id": "e7ae78e107fa2ed358aa05f667c9c1726b0d320b",
-        "message": "Merge pull request #2 from SkPhilipp/patch-one\n\nSample pr title",
-        "timestamp": "2022-11-30T20:52:55+01:00",
-        "tree_id": "ddfb25ad2c370fd7c8ca1457a93e5f773ab10268",
-        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/e7ae78e107fa2ed358aa05f667c9c1726b0d320b"
+        "id": "2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71",
+        "message": "Delete sample.yml",
+        "timestamp": "2022-11-30T20:53:10+01:00",
+        "tree_id": "d97508ed5f37c7898be17a5c57b54baa9f02323a",
+        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71"
       }
     ],
-    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/d8df0d02ca06...e7ae78e107fa",
+    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/e7ae78e107fa...2b5ef59858c3",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -79,11 +61,11 @@
         "username": "web-flow"
       },
       "distinct": true,
-      "id": "e7ae78e107fa2ed358aa05f667c9c1726b0d320b",
-      "message": "Merge pull request #2 from SkPhilipp/patch-one\n\nSample pr title",
-      "timestamp": "2022-11-30T20:52:55+01:00",
-      "tree_id": "ddfb25ad2c370fd7c8ca1457a93e5f773ab10268",
-      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/e7ae78e107fa2ed358aa05f667c9c1726b0d320b"
+      "id": "2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71",
+      "message": "Delete sample.yml",
+      "timestamp": "2022-11-30T20:53:10+01:00",
+      "tree_id": "d97508ed5f37c7898be17a5c57b54baa9f02323a",
+      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71"
     },
     "pusher": {
       "email": "philipp@hileco.com",
@@ -172,7 +154,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-      "pushed_at": 1669837975,
+      "pushed_at": 1669837990,
       "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
       "size": 46,
       "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -223,15 +205,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "SkPhilipp/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "e7ae78e107fa2ed358aa05f667c9c1726b0d320b",
+  "workflow_sha": "2b5ef59858c3ffba5d39b42fb5f1c2fc352bbc71",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_be13dd24-54ad-4801-968d-8148edf75965",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_be13dd24-54ad-4801-968d-8148edf75965",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_be13dd24-54ad-4801-968d-8148edf75965",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_be13dd24-54ad-4801-968d-8148edf75965",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_be13dd24-54ad-4801-968d-8148edf75965"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_0ca6eb30-8e87-4ec9-978f-4029088371d7",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_0ca6eb30-8e87-4ec9-978f-4029088371d7",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_0ca6eb30-8e87-4ec9-978f-4029088371d7",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_0ca6eb30-8e87-4ec9-978f-4029088371d7",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_0ca6eb30-8e87-4ec9-978f-4029088371d7"
 }
