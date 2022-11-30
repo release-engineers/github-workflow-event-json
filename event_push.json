@@ -2,13 +2,13 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "1e4eee1529b43f3a17e4958216654de8bd8607cc",
+  "sha": "a6f407f208d7ee718cf8f6651c0422c027d48de4",
   "repository": "SkPhilipp/github-workflow-event-json",
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3586038113",
-  "run_number": "17",
+  "run_id": "3586038634",
+  "run_number": "18",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -22,50 +22,50 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "1e4eee1529b43f3a17e4958216654de8bd8607cc",
+    "after": "a6f407f208d7ee718cf8f6651c0422c027d48de4",
     "base_ref": null,
-    "before": "ca6bcc280dc8bc1abf2ab6f3974d1cc8c20a7c85",
+    "before": "1e4eee1529b43f3a17e4958216654de8bd8607cc",
     "commits": [
       {
         "author": {
           "email": "philipp@hileco.com",
-          "name": "SkPhilipp",
+          "name": "Philipp Gayret",
           "username": "SkPhilipp"
         },
         "committer": {
-          "email": "philipp@hileco.com",
-          "name": "SkPhilipp",
-          "username": "SkPhilipp"
+          "email": "noreply@github.com",
+          "name": "GitHub",
+          "username": "web-flow"
         },
         "distinct": true,
-        "id": "1e4eee1529b43f3a17e4958216654de8bd8607cc",
-        "message": "Updated .github/workflows/sink.yml",
-        "timestamp": "2022-11-30T19:24:42+01:00",
-        "tree_id": "6bc179ae80837d2c3f7f75728864870db478dd10",
-        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/1e4eee1529b43f3a17e4958216654de8bd8607cc"
+        "id": "a6f407f208d7ee718cf8f6651c0422c027d48de4",
+        "message": "Delete event_issues.json",
+        "timestamp": "2022-11-30T19:24:48+01:00",
+        "tree_id": "5dfc7715914925b28a8ccd12e03938020bd46c8e",
+        "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/a6f407f208d7ee718cf8f6651c0422c027d48de4"
       }
     ],
-    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/ca6bcc280dc8...1e4eee1529b4",
+    "compare": "https://github.com/SkPhilipp/github-workflow-event-json/compare/1e4eee1529b4...a6f407f208d7",
     "created": false,
     "deleted": false,
     "forced": false,
     "head_commit": {
       "author": {
         "email": "philipp@hileco.com",
-        "name": "SkPhilipp",
+        "name": "Philipp Gayret",
         "username": "SkPhilipp"
       },
       "committer": {
-        "email": "philipp@hileco.com",
-        "name": "SkPhilipp",
-        "username": "SkPhilipp"
+        "email": "noreply@github.com",
+        "name": "GitHub",
+        "username": "web-flow"
       },
       "distinct": true,
-      "id": "1e4eee1529b43f3a17e4958216654de8bd8607cc",
-      "message": "Updated .github/workflows/sink.yml",
-      "timestamp": "2022-11-30T19:24:42+01:00",
-      "tree_id": "6bc179ae80837d2c3f7f75728864870db478dd10",
-      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/1e4eee1529b43f3a17e4958216654de8bd8607cc"
+      "id": "a6f407f208d7ee718cf8f6651c0422c027d48de4",
+      "message": "Delete event_issues.json",
+      "timestamp": "2022-11-30T19:24:48+01:00",
+      "tree_id": "5dfc7715914925b28a8ccd12e03938020bd46c8e",
+      "url": "https://github.com/SkPhilipp/github-workflow-event-json/commit/a6f407f208d7ee718cf8f6651c0422c027d48de4"
     },
     "pusher": {
       "email": "philipp@hileco.com",
@@ -154,7 +154,7 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-      "pushed_at": 1669832683,
+      "pushed_at": 1669832688,
       "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
       "size": 11,
       "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -205,15 +205,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "SkPhilipp/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "1e4eee1529b43f3a17e4958216654de8bd8607cc",
+  "workflow_sha": "a6f407f208d7ee718cf8f6651c0422c027d48de4",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_e058d06f-55b1-4263-a8db-893acb61b37c",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_e058d06f-55b1-4263-a8db-893acb61b37c",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_e058d06f-55b1-4263-a8db-893acb61b37c",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_e058d06f-55b1-4263-a8db-893acb61b37c",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_e058d06f-55b1-4263-a8db-893acb61b37c"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_f22dc2f6-5c54-4fe6-b67c-4d6005875aec",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_f22dc2f6-5c54-4fe6-b67c-4d6005875aec",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_f22dc2f6-5c54-4fe6-b67c-4d6005875aec",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_f22dc2f6-5c54-4fe6-b67c-4d6005875aec",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_f22dc2f6-5c54-4fe6-b67c-4d6005875aec"
 }
