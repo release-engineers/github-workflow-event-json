@@ -1,14 +1,14 @@
 {
   "token": "***",
   "job": "update",
-  "ref": "refs/pull/3/merge",
-  "sha": "e6984fb25dd68f7ca29126751e8ccc74b1605af3",
+  "ref": "refs/pull/7/merge",
+  "sha": "313be9d063e5ac3091f5f38cfb13f417821d85fa",
   "repository": "SkPhilipp/github-workflow-event-json",
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3586832891",
-  "run_number": "58",
+  "run_id": "3587540444",
+  "run_number": "100",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -23,32 +23,32 @@
   "event_name": "pull_request",
   "event": {
     "action": "closed",
-    "number": 3,
+    "number": 7,
     "pull_request": {
       "_links": {
         "comments": {
-          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/3/comments"
+          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/7/comments"
         },
         "commits": {
-          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/3/commits"
+          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/7/commits"
         },
         "html": {
-          "href": "https://github.com/SkPhilipp/github-workflow-event-json/pull/3"
+          "href": "https://github.com/SkPhilipp/github-workflow-event-json/pull/7"
         },
         "issue": {
-          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/3"
+          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/7"
         },
         "review_comment": {
           "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/comments{/number}"
         },
         "review_comments": {
-          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/3/comments"
+          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/7/comments"
         },
         "self": {
-          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/3"
+          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/7"
         },
         "statuses": {
-          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/statuses/692c5e43dcb4dced6f8c6b7501211f703b0555be"
+          "href": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/statuses/2f86ded34d3aa6f6433a5423db02338d0be28ae7"
         }
       },
       "active_lock_reason": null,
@@ -147,9 +147,9 @@
           },
           "private": true,
           "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-          "pushed_at": "2022-11-30T20:25:40Z",
+          "pushed_at": "2022-11-30T22:16:35Z",
           "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
-          "size": 46,
+          "size": 80,
           "squash_merge_commit_message": "COMMIT_MESSAGES",
           "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
           "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -171,7 +171,7 @@
           "watchers_count": 0,
           "web_commit_signoff_required": false
         },
-        "sha": "3681262e4ea5f53dc8a4e3f8d64f73bcd2a5e10d",
+        "sha": "54ba2b705e264b1665588017803397cf1f48b99e",
         "user": {
           "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
           "events_url": "https://api.github.com/users/SkPhilipp/events{/privacy}",
@@ -194,15 +194,15 @@
         }
       },
       "body": "Sample PR body",
-      "changed_files": 2,
-      "closed_at": "2022-11-30T20:25:48Z",
-      "comments": 2,
-      "comments_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/3/comments",
+      "changed_files": 1,
+      "closed_at": "2022-11-30T22:16:49Z",
+      "comments": 0,
+      "comments_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/7/comments",
       "commits": 1,
-      "commits_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/3/commits",
-      "created_at": "2022-11-30T20:25:09Z",
+      "commits_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/7/commits",
+      "created_at": "2022-11-30T22:16:35Z",
       "deletions": 0,
-      "diff_url": "https://github.com/SkPhilipp/github-workflow-event-json/pull/3.diff",
+      "diff_url": "https://github.com/SkPhilipp/github-workflow-event-json/pull/7.diff",
       "draft": false,
       "head": {
         "label": "SkPhilipp:sample-branch",
@@ -294,9 +294,9 @@
           },
           "private": true,
           "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-          "pushed_at": "2022-11-30T20:25:40Z",
+          "pushed_at": "2022-11-30T22:16:35Z",
           "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
-          "size": 46,
+          "size": 80,
           "squash_merge_commit_message": "COMMIT_MESSAGES",
           "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
           "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
@@ -318,7 +318,7 @@
           "watchers_count": 0,
           "web_commit_signoff_required": false
         },
-        "sha": "692c5e43dcb4dced6f8c6b7501211f703b0555be",
+        "sha": "2f86ded34d3aa6f6433a5423db02338d0be28ae7",
         "user": {
           "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
           "events_url": "https://api.github.com/users/SkPhilipp/events{/privacy}",
@@ -340,33 +340,33 @@
           "url": "https://api.github.com/users/SkPhilipp"
         }
       },
-      "html_url": "https://github.com/SkPhilipp/github-workflow-event-json/pull/3",
-      "id": 1140837475,
-      "issue_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/3",
+      "html_url": "https://github.com/SkPhilipp/github-workflow-event-json/pull/7",
+      "id": 1140936535,
+      "issue_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/issues/7",
       "labels": [],
       "locked": false,
       "maintainer_can_modify": false,
-      "merge_commit_sha": "e6984fb25dd68f7ca29126751e8ccc74b1605af3",
+      "merge_commit_sha": "313be9d063e5ac3091f5f38cfb13f417821d85fa",
       "mergeable": true,
-      "mergeable_state": "clean",
+      "mergeable_state": "unstable",
       "merged": false,
       "merged_at": null,
       "merged_by": null,
       "milestone": null,
-      "node_id": "PR_kwDOIh-l6s5D_8xj",
-      "number": 3,
-      "patch_url": "https://github.com/SkPhilipp/github-workflow-event-json/pull/3.patch",
+      "node_id": "PR_kwDOIh-l6s5EAU9X",
+      "number": 7,
+      "patch_url": "https://github.com/SkPhilipp/github-workflow-event-json/pull/7.patch",
       "rebaseable": false,
       "requested_reviewers": [],
       "requested_teams": [],
       "review_comment_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/comments{/number}",
       "review_comments": 0,
-      "review_comments_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/3/comments",
+      "review_comments_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/7/comments",
       "state": "closed",
-      "statuses_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/statuses/692c5e43dcb4dced6f8c6b7501211f703b0555be",
+      "statuses_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/statuses/2f86ded34d3aa6f6433a5423db02338d0be28ae7",
       "title": "Sample PR title",
-      "updated_at": "2022-11-30T20:25:48Z",
-      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/3",
+      "updated_at": "2022-11-30T22:16:49Z",
+      "url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls/7",
       "user": {
         "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
         "events_url": "https://api.github.com/users/SkPhilipp/events{/privacy}",
@@ -467,9 +467,9 @@
       },
       "private": true,
       "pulls_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/pulls{/number}",
-      "pushed_at": "2022-11-30T20:25:40Z",
+      "pushed_at": "2022-11-30T22:16:35Z",
       "releases_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/releases{/id}",
-      "size": 46,
+      "size": 80,
       "ssh_url": "git@github.com:SkPhilipp/github-workflow-event-json.git",
       "stargazers_count": 0,
       "stargazers_url": "https://api.github.com/repos/SkPhilipp/github-workflow-event-json/stargazers",
@@ -512,20 +512,20 @@
   "server_url": "https://github.com",
   "api_url": "https://api.github.com",
   "graphql_url": "https://api.github.com/graphql",
-  "ref_name": "3/merge",
+  "ref_name": "7/merge",
   "ref_protected": false,
   "ref_type": "branch",
   "secret_source": "Actions",
-  "workflow_ref": "SkPhilipp/github-workflow-event-json/.github/workflows/sink.yml@refs/pull/3/merge",
-  "workflow_sha": "e6984fb25dd68f7ca29126751e8ccc74b1605af3",
+  "workflow_ref": "SkPhilipp/github-workflow-event-json/.github/workflows/sink.yml@refs/pull/7/merge",
+  "workflow_sha": "313be9d063e5ac3091f5f38cfb13f417821d85fa",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_61432d76-d06a-4244-8159-d2ec10121eb1",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_61432d76-d06a-4244-8159-d2ec10121eb1",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_61432d76-d06a-4244-8159-d2ec10121eb1",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_61432d76-d06a-4244-8159-d2ec10121eb1",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_61432d76-d06a-4244-8159-d2ec10121eb1"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_384b69ca-c4b9-4fef-8d16-2e3695ca58e9",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_384b69ca-c4b9-4fef-8d16-2e3695ca58e9",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_384b69ca-c4b9-4fef-8d16-2e3695ca58e9",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_384b69ca-c4b9-4fef-8d16-2e3695ca58e9",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_384b69ca-c4b9-4fef-8d16-2e3695ca58e9"
 }
