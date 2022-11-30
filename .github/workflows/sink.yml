@@ -20,11 +20,9 @@ jobs:
         sample_matrix_var_2: [ foo ]
     steps:
       - env:
-          # github, env, job, jobs, steps, runner, secrets, strategy, matrix, needs, inputs
           CONTEXT_GITHUB: ${{ toJson(github) }}
           CONTEXT_ENV: ${{ toJson(env) }}
           CONTEXT_JOB: ${{ toJson(job) }}
-          # CONTEXT_JOBS: ${{ toJson(jobs) }}
           CONTEXT_STEPS: ${{ toJson(steps) }}
           CONTEXT_RUNNER: ${{ toJson(runner) }}
           CONTEXT_SECRETS: ${{ toJson(secrets) }}
@@ -32,4 +30,14 @@ jobs:
           CONTEXT_MATRIX: ${{ toJson(matrix) }}
           CONTEXT_NEEDS: ${{ toJson(needs) }}
           CONTEXT_INPUTS: ${{ toJson(inputs) }}
-        run: env
+        run: |
+          echo "github: $CONTEXT_GITHUB"
+          echo "env: $CONTEXT_ENV"
+          echo "job: $CONTEXT_JOB"
+          echo "steps: $CONTEXT_STEPS"
+          echo "runner: $CONTEXT_RUNNER"
+          echo "secrets: $CONTEXT_SECRETS"
+          echo "strategy: $CONTEXT_STRATEGY"
+          echo "matrix: $CONTEXT_MATRIX"
+          echo "needs: $CONTEXT_NEEDS"
+          echo "inputs: $CONTEXT_INPUTS"
