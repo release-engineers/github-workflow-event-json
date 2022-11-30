@@ -6,9 +6,12 @@ Any activity on this repository is recorded by [.github/workflows/sink.yml](.git
 ## `github`
 
 This GitHub Actions context variable contains the event payload, it will be different based on what kind of event triggered a workflow.
-You can find it in the `${event}__${action}.json` or when the event has no action types, `${event}.json`.
+You can find it for a specific event in `${event}__${action}.json` or when the event has no action types, just `${event}.json`.
 
-For example, event `pull_request_target` with type `closed` can be found as [pull_request_target__closed.json](./pull_request_target__closed.json)
+For example;
+
+- Event `pull_request_target` with type `closed` can be found as [pull_request_target__closed.json](./pull_request_target__closed.json)
+- Event `push` can be found as [push.json](./push.json)
 
 ## `inputs`
 
