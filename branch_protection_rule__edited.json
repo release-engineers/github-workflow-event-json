@@ -7,8 +7,8 @@
   "repository_owner": "SkPhilipp",
   "repository_owner_id": "1235612",
   "repositoryUrl": "git://github.com/SkPhilipp/github-workflow-event-json.git",
-  "run_id": "3587533929",
-  "run_number": "87",
+  "run_id": "3587534787",
+  "run_number": "88",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -24,14 +24,8 @@
   "event": {
     "action": "edited",
     "changes": {
-      "dismiss_stale_reviews_on_push": {
-        "from": true
-      },
-      "pull_request_reviews_enforcement_level": {
-        "from": "everyone"
-      },
-      "require_last_push_approval": {
-        "from": true
+      "name": {
+        "from": "sample-name-or-pattern"
       }
     },
     "repository": {
@@ -148,7 +142,7 @@
       "ignore_approvals_from_contributors": false,
       "linear_history_requirement_enforcement_level": "everyone",
       "merge_queue_enforcement_level": "off",
-      "name": "sample-name-or-pattern",
+      "name": "sample-name-or-pattern-updated",
       "pull_request_reviews_enforcement_level": "off",
       "repository_id": 572499434,
       "require_code_owner_review": false,
@@ -160,7 +154,7 @@
       "required_status_checks_enforcement_level": "everyone",
       "signature_requirement_enforcement_level": "everyone",
       "strict_required_status_checks_policy": true,
-      "updated_at": "2022-11-30T23:15:48.000+01:00"
+      "updated_at": "2022-11-30T23:15:55.000+01:00"
     },
     "sender": {
       "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
@@ -197,9 +191,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_e234386b-1a46-45a8-8351-88d579e12a1f",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_e234386b-1a46-45a8-8351-88d579e12a1f",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_e234386b-1a46-45a8-8351-88d579e12a1f",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_e234386b-1a46-45a8-8351-88d579e12a1f",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_e234386b-1a46-45a8-8351-88d579e12a1f"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_726a4663-eefc-4977-965f-fc0f208f1a72",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_726a4663-eefc-4977-965f-fc0f208f1a72",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_726a4663-eefc-4977-965f-fc0f208f1a72",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_726a4663-eefc-4977-965f-fc0f208f1a72",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_726a4663-eefc-4977-965f-fc0f208f1a72"
 }
