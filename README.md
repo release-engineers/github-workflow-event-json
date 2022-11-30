@@ -1,16 +1,16 @@
 # github-workflow-event-json
 
-This repository contains JSON files for the many different event payloads a GitHub workflow can expect, along with other JSONs representing the different context variables. The workflow at [.github/workflows/sink.yml](.github/workflows/sink.yml) records practically anything that happens and commits context variables back into this repository as JSON. The only thing omitted from the JSON files in this repository is the `GITHUB_TOKEN` secret, which will have a value of `***`, every other field is how the workflow received it.
+This repository contains JSON files for the many different event payloads and context variables available to a GitHub workflow.
+Any activity on this repository is recorded by [.github/workflows/sink.yml](.github/workflows/sink.yml), which commits back all context variables into this repository, as JSON.
 
-## Context Variables
+## `github`
 
-The context variables are entirely dynamic, all below context variables were captured with the workflow [.github/workflows/sink.yml](.github/workflows/sink.yml).
+This GitHub Actions context variable contains the event payload, it will be different based on what kind of event triggered a workflow.
+You can find it in the file `event_${event}_subtype_${type}.json`, or when no type exists, `event_${event}.json`.
 
-### `github`
+For example, event `pull_request_target` with type `closed` can be found as [event_pull_request_target_subtype_closed.json](./event_pull_request_target_subtype_closed.json)
 
-As this context variable contains the event payload, it will be different based on what event a workflow triggered on. This is one of many `event_${event}_subtype_${type}.json` files, or when no type exists, `event_${type}.json`. For example the `github` context variable for event `pull_request_target` of type `closed` can be found in [event_pull_request_target_subtype_closed.json](./event_pull_request_target_subtype_closed.json)
-
-### `inputs`
+## `inputs`
 
 ```json
 {
@@ -20,7 +20,7 @@ As this context variable contains the event payload, it will be different based 
 
 ```
 
-### `jobs`
+## `jobs`
 
 ```json
 {
@@ -29,7 +29,7 @@ As this context variable contains the event payload, it will be different based 
 
 ```
 
-### `matrix`
+## `matrix`
 
 ```json
 {
@@ -39,8 +39,7 @@ As this context variable contains the event payload, it will be different based 
 
 ```
 
-
-### `needs`
+## `needs`
 
 ```json
 {
@@ -57,7 +56,7 @@ As this context variable contains the event payload, it will be different based 
 
 ```
 
-### `runner`
+## `runner`
 
 ```json
 {
@@ -71,7 +70,7 @@ As this context variable contains the event payload, it will be different based 
 
 ```
 
-### `secrets`
+## `secrets`
 
 ```json
 {
@@ -81,14 +80,14 @@ As this context variable contains the event payload, it will be different based 
 
 ```
 
-### `steps`
+## `steps`
 
 ```json
 {}
 
 ```
 
-### `strategy`
+## `strategy`
 
 ```json
 {
