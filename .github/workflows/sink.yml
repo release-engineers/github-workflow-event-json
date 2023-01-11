@@ -145,6 +145,7 @@ jobs:
           CONTEXT_GITHUB_EVENT_ACTION_NAME: ${{ github.event.action }}
           CONTEXT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTEXT_ENV: ${{ toJson(env) }}
+          CONTEXT_VARS: ${{ toJson(vars) }}
           CONTEXT_JOB: ${{ toJson(job) }}
           CONTEXT_STEPS: ${{ toJson(steps) }}
           CONTEXT_RUNNER: ${{ toJson(runner) }}
@@ -165,6 +166,7 @@ jobs:
           # write job, steps, runner, secrets, strategy, matrix, needs, inputs to context_${type}.json
           if [ "${CONTEXT_GITHUB_EVENT_NAME}" == "workflow_dispatch" ]; then
             echo "${CONTEXT_JOB}" > "context_job.json"
+            echo "${CONTEXT_VARS}" > "context_vars.json"
             echo "${CONTEXT_STEPS}" > "context_steps.json"
             echo "${CONTEXT_RUNNER}" > "context_runner.json"
             echo "${CONTEXT_SECRETS}" > "context_secrets.json"
