@@ -19,6 +19,12 @@ For example;
 {{ load('context_inputs.json') }}
 ```
 
+## `vars`
+
+```json
+{{ load('context_vars.json') }}
+```
+
 ## `jobs`
 
 ```json
