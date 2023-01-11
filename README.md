@@ -23,6 +23,15 @@ For example;
 
 ```
 
+## `vars`
+
+```json
+{
+  "SAMPLE_REPO_VARIABLE": "123"
+}
+
+```
+
 ## `jobs`
 
 ```json
@@ -65,7 +74,7 @@ For example;
 {
   "os": "Linux",
   "arch": "X64",
-  "name": "GitHub Actions 3",
+  "name": "Hosted Agent",
   "tool_cache": "/opt/hostedtoolcache",
   "temp": "/home/runner/work/_temp",
   "workspace": "/home/runner/work/github-workflow-event-json"
