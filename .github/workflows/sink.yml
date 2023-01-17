@@ -149,7 +149,6 @@ jobs:
           CONTEXT_JOB: ${{ toJson(job) }}
           CONTEXT_STEPS: ${{ toJson(steps) }}
           CONTEXT_RUNNER: ${{ toJson(runner) }}
-          CONTEXT_SECRETS: ${{ toJson(secrets) }}
           CONTEXT_STRATEGY: ${{ toJson(strategy) }}
           CONTEXT_MATRIX: ${{ toJson(matrix) }}
           CONTEXT_NEEDS: ${{ toJson(needs) }}
@@ -163,13 +162,12 @@ jobs:
           fi
 
           # if CONTEXT_GITHUB_EVENT_NAME == workflow_dispatch;
-          # write job, steps, runner, secrets, strategy, matrix, needs, inputs to context_${type}.json
+          # write job, steps, runner, strategy, matrix, needs, inputs to context_${type}.json
           if [ "${CONTEXT_GITHUB_EVENT_NAME}" == "workflow_dispatch" ]; then
             echo "${CONTEXT_JOB}" > "context_job.json"
             echo "${CONTEXT_VARS}" > "context_vars.json"
             echo "${CONTEXT_STEPS}" > "context_steps.json"
             echo "${CONTEXT_RUNNER}" > "context_runner.json"
-            echo "${CONTEXT_SECRETS}" > "context_secrets.json"
             echo "${CONTEXT_STRATEGY}" > "context_strategy.json"
             echo "${CONTEXT_MATRIX}" > "context_matrix.json"
             echo "${CONTEXT_NEEDS}" > "context_needs.json"
