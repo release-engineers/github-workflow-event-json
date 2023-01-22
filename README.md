@@ -74,7 +74,7 @@ For example;
 {
   "os": "Linux",
   "arch": "X64",
-  "name": "Hosted Agent",
+  "name": "GitHub Actions 2",
   "tool_cache": "/opt/hostedtoolcache",
   "temp": "/home/runner/work/_temp",
   "workspace": "/home/runner/work/github-workflow-event-json"
