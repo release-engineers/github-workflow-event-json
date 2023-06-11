@@ -7,8 +7,8 @@
   "repository_owner": "release-engineers",
   "repository_owner_id": "122935237",
   "repositoryUrl": "git://github.com/release-engineers/github-workflow-event-json.git",
-  "run_id": "5233003789",
-  "run_number": "232",
+  "run_id": "5233003791",
+  "run_number": "233",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -202,7 +202,7 @@
       "check_suite_id": 13515519411,
       "check_suite_node_id": "CS_kwDOIh-l6s8AAAADJZZ1sw",
       "check_suite_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/check-suites/13515519411",
-      "conclusion": "success",
+      "conclusion": null,
       "created_at": "2023-06-11T01:58:35Z",
       "display_title": "Event Emitter",
       "event": "schedule",
@@ -370,7 +370,7 @@
       "run_attempt": 1,
       "run_number": 29,
       "run_started_at": "2023-06-11T01:58:35Z",
-      "status": "completed",
+      "status": "in_progress",
       "triggering_actor": {
         "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
         "events_url": "https://api.github.com/users/SkPhilipp/events{/privacy}",
@@ -411,9 +411,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_0fafff6a-14ae-4481-866e-03715682c558",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_0fafff6a-14ae-4481-866e-03715682c558",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_0fafff6a-14ae-4481-866e-03715682c558",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_0fafff6a-14ae-4481-866e-03715682c558",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_0fafff6a-14ae-4481-866e-03715682c558"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_77656e52-80fd-420a-aa78-527195a45ea9",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_77656e52-80fd-420a-aa78-527195a45ea9",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_77656e52-80fd-420a-aa78-527195a45ea9",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_77656e52-80fd-420a-aa78-527195a45ea9",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_77656e52-80fd-420a-aa78-527195a45ea9"
 }
