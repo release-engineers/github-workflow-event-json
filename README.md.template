@@ -19,11 +19,28 @@ For example;
 {{ load('context_inputs.json') }}
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  In this repository the `workflow_call` section of sink.yml defines inputs with a different name, this is reflected in `inputs`;
+  ```json
+  {{ load('context_inputs_reusable.json') }}
+  ```
+</details>
+
 ## `vars`
 
 ```json
 {{ load('context_vars.json') }}
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_vars_reusable.json') }}
+  ```
+</details>
 
 ## `jobs`
 
@@ -31,11 +48,27 @@ For example;
 {{ load('context_job.json') }}
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_job_reusable.json') }}
+  ```
+</details>
+
 ## `matrix`
 
 ```json
 {{ load('context_matrix.json') }}
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_matrix_reusable.json') }}
+  ```
+</details>
 
 ## `needs`
 
@@ -43,11 +76,27 @@ For example;
 {{ load('context_needs.json') }}
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_needs_reusable.json') }}
+  ```
+</details>
+
 ## `runner`
 
 ```json
 {{ load('context_runner.json') }}
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_runner_reusable.json') }}
+  ```
+</details>
 
 ## `secrets`
 
@@ -55,14 +104,38 @@ For example;
 {{ load('context_secrets.json') }}
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_secrets_reusable.json') }}
+  ```
+</details>
+
 ## `steps`
 
 ```json
 {{ load('context_steps.json') }}
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_steps_reusable.json') }}
+  ```
+</details>
+
 ## `strategy`
 
 ```json
 {{ load('context_strategy.json') }}
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {{ load('context_strategy_reusable.json') }}
+  ```
+</details>
