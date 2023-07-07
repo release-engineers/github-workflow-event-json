@@ -2,17 +2,18 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "87d0d4edf386cee011b334edc1c702a8e13973b3",
+  "sha": "437a565b2e71f8d239b10b12be40c4fb4e60bb47",
   "repository": "release-engineers/github-workflow-event-json",
   "repository_owner": "release-engineers",
   "repository_owner_id": "122935237",
   "repositoryUrl": "git://github.com/release-engineers/github-workflow-event-json.git",
-  "run_id": "3943973057",
-  "run_number": "149",
+  "run_id": "5486889166",
+  "run_number": "248",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
   "repository_visibility": "public",
+  "repo-self-hosted-runners-disabled": false,
   "repository_id": "572499434",
   "actor_id": "1235612",
   "actor": "SkPhilipp",
@@ -22,9 +23,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "87d0d4edf386cee011b334edc1c702a8e13973b3",
+    "after": "437a565b2e71f8d239b10b12be40c4fb4e60bb47",
     "base_ref": null,
-    "before": "91e0aae32a0843f409bc590888737caccb0dff05",
+    "before": "d0f53b1864ae5b2d0640ae4c741140c455bdcbd0",
     "commits": [
       {
         "author": {
@@ -38,14 +39,14 @@
           "username": "web-flow"
         },
         "distinct": true,
-        "id": "87d0d4edf386cee011b334edc1c702a8e13973b3",
+        "id": "437a565b2e71f8d239b10b12be40c4fb4e60bb47",
         "message": "Update sink.yml",
-        "timestamp": "2023-01-17T23:51:44+01:00",
-        "tree_id": "1940980c66220f6bf9eb8021b6096294002e60ef",
-        "url": "https://github.com/release-engineers/github-workflow-event-json/commit/87d0d4edf386cee011b334edc1c702a8e13973b3"
+        "timestamp": "2023-07-07T15:22:49+02:00",
+        "tree_id": "9a13250898201e04674b048df84e414062413d74",
+        "url": "https://github.com/release-engineers/github-workflow-event-json/commit/437a565b2e71f8d239b10b12be40c4fb4e60bb47"
       }
     ],
-    "compare": "https://github.com/release-engineers/github-workflow-event-json/compare/91e0aae32a08...87d0d4edf386",
+    "compare": "https://github.com/release-engineers/github-workflow-event-json/compare/d0f53b1864ae...437a565b2e71",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -61,11 +62,11 @@
         "username": "web-flow"
       },
       "distinct": true,
-      "id": "87d0d4edf386cee011b334edc1c702a8e13973b3",
+      "id": "437a565b2e71f8d239b10b12be40c4fb4e60bb47",
       "message": "Update sink.yml",
-      "timestamp": "2023-01-17T23:51:44+01:00",
-      "tree_id": "1940980c66220f6bf9eb8021b6096294002e60ef",
-      "url": "https://github.com/release-engineers/github-workflow-event-json/commit/87d0d4edf386cee011b334edc1c702a8e13973b3"
+      "timestamp": "2023-07-07T15:22:49+02:00",
+      "tree_id": "9a13250898201e04674b048df84e414062413d74",
+      "url": "https://github.com/release-engineers/github-workflow-event-json/commit/437a565b2e71f8d239b10b12be40c4fb4e60bb47"
     },
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/122935237?v=4",
@@ -153,7 +154,7 @@
       "organization": "release-engineers",
       "owner": {
         "avatar_url": "https://avatars.githubusercontent.com/u/122935237?v=4",
-        "email": "info@release-engineers.com",
+        "email": "hello@release-engineers.com",
         "events_url": "https://api.github.com/users/release-engineers/events{/privacy}",
         "followers_url": "https://api.github.com/users/release-engineers/followers",
         "following_url": "https://api.github.com/users/release-engineers/following{/other_user}",
@@ -175,12 +176,12 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/pulls{/number}",
-      "pushed_at": 1673995904,
+      "pushed_at": 1688736169,
       "releases_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/releases{/id}",
-      "size": 151,
+      "size": 223,
       "ssh_url": "git@github.com:release-engineers/github-workflow-event-json.git",
-      "stargazers": 2,
-      "stargazers_count": 2,
+      "stargazers": 5,
+      "stargazers_count": 5,
       "stargazers_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/stargazers",
       "statuses_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/statuses/{sha}",
       "subscribers_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/subscribers",
@@ -188,13 +189,15 @@
       "svn_url": "https://github.com/release-engineers/github-workflow-event-json",
       "tags_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/tags",
       "teams_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/teams",
-      "topics": [],
+      "topics": [
+        "production"
+      ],
       "trees_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/git/trees{/sha}",
-      "updated_at": "2023-01-17T21:14:39Z",
+      "updated_at": "2023-07-04T15:29:06Z",
       "url": "https://github.com/release-engineers/github-workflow-event-json",
       "visibility": "public",
-      "watchers": 2,
-      "watchers_count": 2,
+      "watchers": 5,
+      "watchers_count": 5,
       "web_commit_signoff_required": false
     },
     "sender": {
@@ -226,15 +229,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "release-engineers/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "87d0d4edf386cee011b334edc1c702a8e13973b3",
+  "workflow_sha": "437a565b2e71f8d239b10b12be40c4fb4e60bb47",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_12e1aa52-a1f0-40a3-aff6-59881e565af5",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_12e1aa52-a1f0-40a3-aff6-59881e565af5",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_12e1aa52-a1f0-40a3-aff6-59881e565af5",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_12e1aa52-a1f0-40a3-aff6-59881e565af5",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_12e1aa52-a1f0-40a3-aff6-59881e565af5"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_5cbbc533-5af0-49e5-8731-4b6616fab6a4",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_5cbbc533-5af0-49e5-8731-4b6616fab6a4",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_5cbbc533-5af0-49e5-8731-4b6616fab6a4",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_5cbbc533-5af0-49e5-8731-4b6616fab6a4",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_5cbbc533-5af0-49e5-8731-4b6616fab6a4"
 }
