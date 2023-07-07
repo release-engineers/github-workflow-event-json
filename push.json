@@ -2,13 +2,13 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
+  "sha": "3e90903a45e9648df671307e116a691db4a9bfec",
   "repository": "release-engineers/github-workflow-event-json",
   "repository_owner": "release-engineers",
   "repository_owner_id": "122935237",
   "repositoryUrl": "git://github.com/release-engineers/github-workflow-event-json.git",
-  "run_id": "5487102882",
-  "run_number": "262",
+  "run_id": "5487146454",
+  "run_number": "267",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -23,9 +23,9 @@
   "base_ref": "",
   "event_name": "push",
   "event": {
-    "after": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
+    "after": "3e90903a45e9648df671307e116a691db4a9bfec",
     "base_ref": null,
-    "before": "443e91ba5a3aed907470970ba9dabce97f4d9948",
+    "before": "d68d9fd42f2f6916565b79d4eef7974c91d32eaa",
     "commits": [
       {
         "author": {
@@ -39,14 +39,14 @@
           "username": "web-flow"
         },
         "distinct": true,
-        "id": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
-        "message": "Update sink.yml\n\nAndersom dus..",
-        "timestamp": "2023-07-07T15:46:48+02:00",
-        "tree_id": "05be6bab81c280d11255bb759d70e29016a4478d",
-        "url": "https://github.com/release-engineers/github-workflow-event-json/commit/8e14a9dcd8be2d8a221aa285ac046d7a636ada6b"
+        "id": "3e90903a45e9648df671307e116a691db4a9bfec",
+        "message": "Update README.md.template",
+        "timestamp": "2023-07-07T15:51:56+02:00",
+        "tree_id": "c0bfb60a7dfcbb3db97862980685b222f2f68ae0",
+        "url": "https://github.com/release-engineers/github-workflow-event-json/commit/3e90903a45e9648df671307e116a691db4a9bfec"
       }
     ],
-    "compare": "https://github.com/release-engineers/github-workflow-event-json/compare/443e91ba5a3a...8e14a9dcd8be",
+    "compare": "https://github.com/release-engineers/github-workflow-event-json/compare/d68d9fd42f2f...3e90903a45e9",
     "created": false,
     "deleted": false,
     "forced": false,
@@ -62,11 +62,11 @@
         "username": "web-flow"
       },
       "distinct": true,
-      "id": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
-      "message": "Update sink.yml\n\nAndersom dus..",
-      "timestamp": "2023-07-07T15:46:48+02:00",
-      "tree_id": "05be6bab81c280d11255bb759d70e29016a4478d",
-      "url": "https://github.com/release-engineers/github-workflow-event-json/commit/8e14a9dcd8be2d8a221aa285ac046d7a636ada6b"
+      "id": "3e90903a45e9648df671307e116a691db4a9bfec",
+      "message": "Update README.md.template",
+      "timestamp": "2023-07-07T15:51:56+02:00",
+      "tree_id": "c0bfb60a7dfcbb3db97862980685b222f2f68ae0",
+      "url": "https://github.com/release-engineers/github-workflow-event-json/commit/3e90903a45e9648df671307e116a691db4a9bfec"
     },
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/122935237?v=4",
@@ -176,7 +176,7 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/pulls{/number}",
-      "pushed_at": 1688737609,
+      "pushed_at": 1688737916,
       "releases_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/releases{/id}",
       "size": 223,
       "ssh_url": "git@github.com:release-engineers/github-workflow-event-json.git",
@@ -229,15 +229,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "release-engineers/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
+  "workflow_sha": "3e90903a45e9648df671307e116a691db4a9bfec",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_994a45b8-6962-4d2d-bc56-1a3592c38102",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_994a45b8-6962-4d2d-bc56-1a3592c38102",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_994a45b8-6962-4d2d-bc56-1a3592c38102",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_994a45b8-6962-4d2d-bc56-1a3592c38102",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_994a45b8-6962-4d2d-bc56-1a3592c38102"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_3d573e86-6853-4e95-a9c9-eb7f6ed4f037",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_3d573e86-6853-4e95-a9c9-eb7f6ed4f037",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_3d573e86-6853-4e95-a9c9-eb7f6ed4f037",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_3d573e86-6853-4e95-a9c9-eb7f6ed4f037",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_3d573e86-6853-4e95-a9c9-eb7f6ed4f037"
 }
