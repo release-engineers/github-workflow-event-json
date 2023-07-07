@@ -1,5 +1,7 @@
 # github-workflow-event-json
 
+[![Status: Production ready](https://img.shields.io/badge/status-production_ready-green)](https://release-engineers.com/open-source-badges/)
+
 This repository contains JSON files for the many different event payloads and context variables available to a GitHub workflow.
 Any activity on this repository is recorded by [.github/workflows/sink.yml](.github/workflows/sink.yml), which commits back all context variables into this repository, as JSON.
 
