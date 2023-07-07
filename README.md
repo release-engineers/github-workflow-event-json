@@ -17,8 +17,8 @@ For example;
 
 ```json
 {
-  "sample_input_call_1": "789",
-  "sample_input_call_2": "456"
+  "sample_input_1": "123",
+  "sample_input_2": "456"
 }
 
 ```
@@ -140,7 +140,7 @@ For example;
 {
   "os": "Linux",
   "arch": "X64",
-  "name": "GitHub Actions 3",
+  "name": "GitHub Actions 2",
   "environment": "github-hosted",
   "tool_cache": "/opt/hostedtoolcache",
   "temp": "/home/runner/work/_temp",
