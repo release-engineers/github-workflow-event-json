@@ -105,6 +105,15 @@ on:
   workflow_run:
     workflows: [ "Event Emitter" ]
     types: [ requested, completed, in_progress ]
+  # workflow_call is used to indicate that a workflow can be called by another workflow.
+  workflow_call:
+    inputs:
+      sample_input_call_1:
+        type: string
+        default: 123
+      sample_input_call_2:
+        type: string
+        default: 456
 
 permissions:
   contents: write
