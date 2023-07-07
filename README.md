@@ -17,11 +17,24 @@ For example;
 
 ```json
 {
-  "sample_input_1": "123",
-  "sample_input_2": "456"
+  "sample_input_call_1": "789",
+  "sample_input_call_2": "456"
 }
 
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  In this repository the `workflow_call` section of sink.yml defines inputs with a different name, this is reflected in `inputs`;
+  ```json
+  {
+  "sample_input_call_1": "789",
+  "sample_input_call_2": "456"
+}
+
+  ```
+</details>
 
 ## `vars`
 
@@ -32,6 +45,17 @@ For example;
 
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "SAMPLE_REPO_VARIABLE": "123"
+}
+
+  ```
+</details>
+
 ## `jobs`
 
 ```json
@@ -40,6 +64,17 @@ For example;
 }
 
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "status": "success"
+}
+
+  ```
+</details>
 
 ## `matrix`
 
@@ -50,6 +85,18 @@ For example;
 }
 
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "sample_matrix_var_1": 1,
+  "sample_matrix_var_2": "foo"
+}
+
+  ```
+</details>
 
 ## `needs`
 
@@ -68,19 +115,56 @@ For example;
 
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "sample_needs": {
+    "result": "success",
+    "outputs": {
+      "sample_output_1": "123",
+      "sample_output_2": "456",
+      "sample_output_3": "789",
+      "sample_output_4": "0"
+    }
+  }
+}
+
+  ```
+</details>
+
 ## `runner`
 
 ```json
 {
   "os": "Linux",
   "arch": "X64",
-  "name": "GitHub Actions 2",
+  "name": "GitHub Actions 3",
+  "environment": "github-hosted",
   "tool_cache": "/opt/hostedtoolcache",
   "temp": "/home/runner/work/_temp",
   "workspace": "/home/runner/work/github-workflow-event-json"
 }
 
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "os": "Linux",
+  "arch": "X64",
+  "name": "GitHub Actions 3",
+  "environment": "github-hosted",
+  "tool_cache": "/opt/hostedtoolcache",
+  "temp": "/home/runner/work/_temp",
+  "workspace": "/home/runner/work/github-workflow-event-json"
+}
+
+  ```
+</details>
 
 ## `secrets`
 
@@ -92,12 +176,32 @@ For example;
 
 ```
 
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "github_token": "***"
+}
+
+  ```
+</details>
+
 ## `steps`
 
 ```json
 {}
 
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {}
+
+  ```
+</details>
 
 ## `strategy`
 
@@ -110,3 +214,17 @@ For example;
 }
 
 ```
+
+<details>
+  <summary>Reusable workflow variant</summary>
+
+  ```json
+  {
+  "fail-fast": true,
+  "job-index": 0,
+  "job-total": 1,
+  "max-parallel": 1
+}
+
+  ```
+</details>
