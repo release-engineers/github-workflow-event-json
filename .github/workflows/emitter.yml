@@ -12,3 +12,7 @@ jobs:
     steps:
       - run: |
           echo "OK"
+  call-workflow:
+    uses: release-engineers/github-workflow-event-json/.github/workflows/sink.yml@master
+    with:
+      sample_input_call_1: "789"
