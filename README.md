@@ -179,6 +179,7 @@ For example;
 <details>
   <summary>Reusable workflow variant</summary>
 
+  Reusable workflows by default don't have access to secrets of the calling workflow.
   ```json
   {
   "github_token": "***"
