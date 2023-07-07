@@ -2,13 +2,13 @@
   "token": "***",
   "job": "update",
   "ref": "refs/heads/master",
-  "sha": "e8409d3c78f45951b6749b8bd1644f078eb7bfd6",
+  "sha": "71a99fe2982c31fa9f0304dbe28aa94703fd7250",
   "repository": "release-engineers/github-workflow-event-json",
   "repository_owner": "release-engineers",
   "repository_owner_id": "122935237",
   "repositoryUrl": "git://github.com/release-engineers/github-workflow-event-json.git",
-  "run_id": "5487072324",
-  "run_number": "261",
+  "run_id": "5487107626",
+  "run_number": "266",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -123,7 +123,7 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/pulls{/number}",
-      "pushed_at": "2023-07-07T13:43:05Z",
+      "pushed_at": "2023-07-07T13:47:18Z",
       "releases_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/releases{/id}",
       "size": 223,
       "ssh_url": "git@github.com:release-engineers/github-workflow-event-json.git",
@@ -199,13 +199,13 @@
         "type": "User",
         "url": "https://api.github.com/users/SkPhilipp"
       },
-      "artifacts_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487068552/artifacts",
-      "cancel_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487068552/cancel",
-      "check_suite_id": 14135330868,
-      "check_suite_node_id": "CS_kwDOIh-l6s8AAAADSogINA",
-      "check_suite_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/check-suites/14135330868",
+      "artifacts_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487103712/artifacts",
+      "cancel_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487103712/cancel",
+      "check_suite_id": 14135434032,
+      "check_suite_node_id": "CS_kwDOIh-l6s8AAAADSombMA",
+      "check_suite_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/check-suites/14135434032",
       "conclusion": "success",
-      "created_at": "2023-07-07T13:42:40Z",
+      "created_at": "2023-07-07T13:46:56Z",
       "display_title": "Event Emitter",
       "event": "workflow_dispatch",
       "head_branch": "master",
@@ -218,10 +218,10 @@
           "email": "noreply@github.com",
           "name": "GitHub"
         },
-        "id": "2b4520423ae85d43dcde4a27ff9e3dfd57c605dc",
-        "message": "Create context_secrets_reusable.json",
-        "timestamp": "2023-07-07T13:42:31Z",
-        "tree_id": "63160a3f5586d8b0512c9d0a73ff00a63a1c5f67"
+        "id": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
+        "message": "Update sink.yml\n\nAndersom dus..",
+        "timestamp": "2023-07-07T13:46:48Z",
+        "tree_id": "05be6bab81c280d11255bb759d70e29016a4478d"
       },
       "head_repository": {
         "archive_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/{archive_format}{/ref}",
@@ -290,13 +290,13 @@
         "trees_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/git/trees{/sha}",
         "url": "https://api.github.com/repos/release-engineers/github-workflow-event-json"
       },
-      "head_sha": "2b4520423ae85d43dcde4a27ff9e3dfd57c605dc",
-      "html_url": "https://github.com/release-engineers/github-workflow-event-json/actions/runs/5487068552",
-      "id": 5487068552,
-      "jobs_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487068552/jobs",
-      "logs_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487068552/logs",
+      "head_sha": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b",
+      "html_url": "https://github.com/release-engineers/github-workflow-event-json/actions/runs/5487103712",
+      "id": 5487103712,
+      "jobs_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487103712/jobs",
+      "logs_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487103712/logs",
       "name": "Event Emitter",
-      "node_id": "WFR_kwLOIh-l6s8AAAABRw4FiA",
+      "node_id": "WFR_kwLOIh-l6s8AAAABRw6O4A",
       "path": ".github/workflows/emitter.yml",
       "previous_attempt_url": null,
       "pull_requests": [],
@@ -304,7 +304,7 @@
         {
           "path": "release-engineers/github-workflow-event-json/.github/workflows/sink.yml@master",
           "ref": "refs/heads/master",
-          "sha": "2b4520423ae85d43dcde4a27ff9e3dfd57c605dc"
+          "sha": "8e14a9dcd8be2d8a221aa285ac046d7a636ada6b"
         }
       ],
       "repository": {
@@ -374,10 +374,10 @@
         "trees_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/git/trees{/sha}",
         "url": "https://api.github.com/repos/release-engineers/github-workflow-event-json"
       },
-      "rerun_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487068552/rerun",
+      "rerun_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487103712/rerun",
       "run_attempt": 1,
-      "run_number": 35,
-      "run_started_at": "2023-07-07T13:42:40Z",
+      "run_number": 36,
+      "run_started_at": "2023-07-07T13:46:56Z",
       "status": "completed",
       "triggering_actor": {
         "avatar_url": "https://avatars.githubusercontent.com/u/1235612?v=4",
@@ -399,8 +399,8 @@
         "type": "User",
         "url": "https://api.github.com/users/SkPhilipp"
       },
-      "updated_at": "2023-07-07T13:43:05Z",
-      "url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487068552",
+      "updated_at": "2023-07-07T13:47:21Z",
+      "url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5487103712",
       "workflow_id": 41896710,
       "workflow_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/workflows/41896710"
     }
@@ -413,15 +413,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "release-engineers/github-workflow-event-json/.github/workflows/sink.yml@refs/heads/master",
-  "workflow_sha": "e8409d3c78f45951b6749b8bd1644f078eb7bfd6",
+  "workflow_sha": "71a99fe2982c31fa9f0304dbe28aa94703fd7250",
   "workspace": "/home/runner/work/github-workflow-event-json/github-workflow-event-json",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_5cd6e6a4-9c87-47c3-867d-d143c936a0fb",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_5cd6e6a4-9c87-47c3-867d-d143c936a0fb",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_5cd6e6a4-9c87-47c3-867d-d143c936a0fb",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_5cd6e6a4-9c87-47c3-867d-d143c936a0fb",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_5cd6e6a4-9c87-47c3-867d-d143c936a0fb"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_fc5e9ee8-f81d-4c6b-a43a-f4c34ce786b4",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_fc5e9ee8-f81d-4c6b-a43a-f4c34ce786b4",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_fc5e9ee8-f81d-4c6b-a43a-f4c34ce786b4",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_fc5e9ee8-f81d-4c6b-a43a-f4c34ce786b4",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_fc5e9ee8-f81d-4c6b-a43a-f4c34ce786b4"
 }
