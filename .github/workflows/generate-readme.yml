@@ -24,9 +24,9 @@ jobs:
   run-templating:
     runs-on: ubuntu-latest
     steps:
-      - uses: EffortGames/action-setup-bash@v1
-      - uses: actions/checkout@v2
-      - uses: EffortGames/action-template@v1
+      - uses: release-engineers/action-setup-bash@v1
+      - uses: actions/checkout@v3
+      - uses: release-engineers/action-template@v1
         with:
           source: 'README.md.template'
           target: 'README.md'
