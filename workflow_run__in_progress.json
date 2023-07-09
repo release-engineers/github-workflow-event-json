@@ -7,8 +7,8 @@
   "repository_owner": "release-engineers",
   "repository_owner_id": "122935237",
   "repositoryUrl": "git://github.com/release-engineers/github-workflow-event-json.git",
-  "run_id": "5497472119",
-  "run_number": "273",
+  "run_id": "5497472728",
+  "run_number": "274",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -399,7 +399,7 @@
         "type": "User",
         "url": "https://api.github.com/users/SkPhilipp"
       },
-      "updated_at": "2023-07-09T02:04:26Z",
+      "updated_at": "2023-07-09T02:04:34Z",
       "url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/runs/5497471349",
       "workflow_id": 41896710,
       "workflow_url": "https://api.github.com/repos/release-engineers/github-workflow-event-json/actions/workflows/41896710"
@@ -419,9 +419,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/checkout",
   "action_ref": "v2",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_e061d9f6-1918-4bf3-8e4b-185ddc52a2d5",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_e061d9f6-1918-4bf3-8e4b-185ddc52a2d5",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_e061d9f6-1918-4bf3-8e4b-185ddc52a2d5",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_e061d9f6-1918-4bf3-8e4b-185ddc52a2d5",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_e061d9f6-1918-4bf3-8e4b-185ddc52a2d5"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_e34c4e02-e938-4bfa-87c7-50593d88bb2a",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_e34c4e02-e938-4bfa-87c7-50593d88bb2a",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_e34c4e02-e938-4bfa-87c7-50593d88bb2a",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_e34c4e02-e938-4bfa-87c7-50593d88bb2a",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_e34c4e02-e938-4bfa-87c7-50593d88bb2a"
 }
