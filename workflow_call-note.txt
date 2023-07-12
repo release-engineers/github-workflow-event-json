@@ -1,0 +1,2 @@
+When a workflow is called using "on.workflow_call", context objects (except for inputs and secrets) are the objects of the calling workflow.
+This means "on.workflow_call" does not have it's own event body or structure.
