@@ -1,4 +1,4 @@
-# github-workflow-event-json
+# release-engineers/github-workflow-event-json
 
 [![Status: Production ready](https://img.shields.io/badge/status-production_ready-green)](https://release-engineers.com/open-source-badges/)
 
