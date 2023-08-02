@@ -2,232 +2,29 @@
 
 [![Status: Production ready](https://img.shields.io/badge/status-production_ready-green)](https://release-engineers.com/open-source-badges/)
 
-This repository contains JSON files for the many different event payloads and context variables available to a GitHub workflow.
-Any activity on this repository is recorded by [.github/workflows/sink.yml](.github/workflows/sink.yml), which commits back all context variables into this repository, as JSON.
+This repository contains captures of the many different event payloads and context variables available to a GitHub workflow.
 
-## `github`
+## May I see them?
 
-This GitHub Actions context variable contains the event payload, it will be different based on what kind of event triggered a workflow.
-You can find it for a specific event in `${event}__${action}.json` or when the event has no action types, just `${event}.json`.
+You can find them in the specific event folders in the [on](./on) directory.
+For example, all information captured for the event of a pull request being merged can be found in "[on/pull_request/closed](./on/pull_request/closed)".
 
-For example;
+Note that we don't have _all_ events but we certainly have most of them.
 
-- Event `pull_request_target` with type `closed` can be found as [pull_request_target__closed.json](./pull_request_target__closed.json)
-- Event `push` can be found as [push.json](./push.json)
+## How does it work?
 
-## `inputs`
+We have set up [a repository](https://github.com/re-organization-sandbox/sandbox-repo/) in a separate GitHub organization that captures the JSON representation
+of most GitHub Actions variables, along with some extra data. Whenever an event occurs, it uploads this data as a GitHub Actions artifact.
 
-```json
-{
-  "sample_input_1": "123",
-  "sample_input_2": "456"
-}
+Every sunday, this repository then downloads any artifacts generated. We may have missed some more exotic events, but this repository certainly contains most of them.
 
-```
+## I'm getting different results!
 
-<details>
-  <summary>Reusable workflow variant</summary>
+The content of all context variables is dependent on many factors, here's how we capture it:
 
-  In this repository the `workflow_call` section of sink.yml defines inputs with a different name, this is reflected in `inputs`;
-  ```json
-  {
-  "sample_input_call_1": "789",
-  "sample_input_call_2": "456"
-}
+- We captured events from the past; GitHub infrastructure, runners and even event structure may have changed since then.
+- We captured events that did or didn't happen during a GitHub outage. (This is known as "degraded performance" on GitHub's status page).
+- We use the `bash` shell on an `ubuntu-latest` runner.
+- We don't make use of the container, reusable workflows, or composite actions feature of GitHub Actions.
 
-  ```
-</details>
-
-## `vars`
-
-```json
-{
-  "SAMPLE_REPO_VARIABLE": "123"
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {
-  "SAMPLE_REPO_VARIABLE": "123"
-}
-
-  ```
-</details>
-
-## `jobs`
-
-```json
-{
-  "status": "success"
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {
-  "status": "success"
-}
-
-  ```
-</details>
-
-## `matrix`
-
-```json
-{
-  "sample_matrix_var_1": 1,
-  "sample_matrix_var_2": "foo"
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {
-  "sample_matrix_var_1": 1,
-  "sample_matrix_var_2": "foo"
-}
-
-  ```
-</details>
-
-## `needs`
-
-```json
-{
-  "sample_needs": {
-    "result": "success",
-    "outputs": {
-      "sample_output_1": "123",
-      "sample_output_2": "456",
-      "sample_output_3": "789",
-      "sample_output_4": "0"
-    }
-  }
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {
-  "sample_needs": {
-    "result": "success",
-    "outputs": {
-      "sample_output_1": "123",
-      "sample_output_2": "456",
-      "sample_output_3": "789",
-      "sample_output_4": "0"
-    }
-  }
-}
-
-  ```
-</details>
-
-## `runner`
-
-```json
-{
-  "os": "Linux",
-  "arch": "X64",
-  "name": "GitHub Actions 2",
-  "environment": "github-hosted",
-  "tool_cache": "/opt/hostedtoolcache",
-  "temp": "/home/runner/work/_temp",
-  "workspace": "/home/runner/work/github-workflow-event-json"
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {
-  "os": "Linux",
-  "arch": "X64",
-  "name": "GitHub Actions 3",
-  "environment": "github-hosted",
-  "tool_cache": "/opt/hostedtoolcache",
-  "temp": "/home/runner/work/_temp",
-  "workspace": "/home/runner/work/github-workflow-event-json"
-}
-
-  ```
-</details>
-
-## `secrets`
-
-```json
-{
-  "SAMPLE_SECRET": "This is an example value",
-  "github_token": "***"
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  Reusable workflows by default don't have access to secrets of the calling workflow.
-  ```json
-  {
-  "github_token": "***"
-}
-
-  ```
-</details>
-
-## `steps`
-
-```json
-{}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {}
-
-  ```
-</details>
-
-## `strategy`
-
-```json
-{
-  "fail-fast": true,
-  "job-index": 0,
-  "job-total": 1,
-  "max-parallel": 1
-}
-
-```
-
-<details>
-  <summary>Reusable workflow variant</summary>
-
-  ```json
-  {
-  "fail-fast": true,
-  "job-index": 0,
-  "job-total": 1,
-  "max-parallel": 1
-}
-
-  ```
-</details>
+These all may lead to different results than you're seeing in your own workflows.
