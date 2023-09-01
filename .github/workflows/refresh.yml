@@ -19,10 +19,10 @@ jobs:
       - env:
           GH_TOKEN: ${{ secrets.SANDBOX_ARTIFACTS_TOKEN }}
         run: |
+          sudo apt install -y libarchive-tools
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           ./.github/scripts/refresh.sh
-      - run: |
           git add .
           git commit --no-verify -m "Refresh"
           for i in {1..50}; do
