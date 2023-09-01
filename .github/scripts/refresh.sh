@@ -18,6 +18,6 @@ for DOWNLOAD_URL in $(echo "$ARTIFACTS" | jq -r ".archive_download_url" | head -
     fi
     rm -rf "$EVENT_PATH" || true
     mkdir -p "$EVENT_PATH"
-    cp -r "$WORK_DIR/" "$EVENT_PATH"
+    cp -r "$WORK_DIR/*" "$EVENT_PATH"
     cp -r .github/scripts/README.md.base "$EVENT_PATH/README.md"
 done
