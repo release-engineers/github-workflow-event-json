@@ -2,10 +2,10 @@ SELENIUM_JAR_PATH=/usr/share/java/selenium-server.jar
 CONDA=/usr/share/miniconda
 GITHUB_WORKSPACE=/home/runner/work/sandbox-repo/sandbox-repo
 JAVA_HOME_11_X64=/usr/lib/jvm/temurin-11-jdk-amd64
-GITHUB_PATH=/home/runner/work/_temp/_runner_file_commands/add_path_58ba0deb-7617-4f5f-81df-281f30b48580
+GITHUB_PATH=/home/runner/work/_temp/_runner_file_commands/add_path_f506667e-7d10-48a0-b76a-15fee3111b5a
 GITHUB_ACTION=__run
 JAVA_HOME=/usr/lib/jvm/temurin-11-jdk-amd64
-GITHUB_RUN_NUMBER=78
+GITHUB_RUN_NUMBER=80
 RUNNER_NAME=GitHub Actions 1
 GRADLE_HOME=/usr/share/gradle-8.3
 GITHUB_REPOSITORY_OWNER_ID=141236542
@@ -48,7 +48,7 @@ DEPLOYMENT_BASEPATH=/opt/runner
 GITHUB_ACTIONS=true
 STATS_VMD=true
 ANDROID_NDK_LATEST_HOME=/usr/local/lib/android/sdk/ndk/25.2.9519653
-SYSTEMD_EXEC_PID=663
+SYSTEMD_EXEC_PID=669
 GITHUB_SHA=ec79e417fc6287da879e336f2096fd23feb0fb16
 GITHUB_WORKFLOW_REF=re-organization-sandbox/sandbox-repo/.github/workflows/sink.yml@refs/heads/main
 POWERSHELL_DISTRIBUTION_CHANNEL=GitHub-Actions-ubuntu22
@@ -64,7 +64,7 @@ GITHUB_API_URL=https://api.github.com
 LANG=C.UTF-8
 CONTEXT_ENV={}
 GITHUB_TOKEN=***
-RUNNER_TRACKING_ID=github_1f175f60-6e8c-4a2a-ae78-a41f9e8c958d
+RUNNER_TRACKING_ID=github_8cb12638-5d21-49d0-bcab-aa2ce99316f2
 CONTEXT_INPUTS={}
 RUNNER_ARCH=X64
 GOROOT_1_21_X64=/opt/hostedtoolcache/go/1.21.0/x64
@@ -77,9 +77,9 @@ CONTEXT_GITHUB={
   "repository_owner": "re-organization-sandbox",
   "repository_owner_id": "141236542",
   "repositoryUrl": "git://github.com/re-organization-sandbox/sandbox-repo.git",
-  "run_id": "5987878044",
-  "run_number": "78",
-  "retention_days": "8",
+  "run_id": "6134073189",
+  "run_number": "80",
+  "retention_days": "7",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
   "repository_visibility": "public",
@@ -224,13 +224,13 @@ CONTEXT_GITHUB={
   "action": "__run"
 }
 RUNNER_TEMP=/home/runner/work/_temp
-GITHUB_STATE=/home/runner/work/_temp/_runner_file_commands/save_state_58ba0deb-7617-4f5f-81df-281f30b48580
+GITHUB_STATE=/home/runner/work/_temp/_runner_file_commands/save_state_f506667e-7d10-48a0-b76a-15fee3111b5a
 EDGEWEBDRIVER=/usr/local/share/edge_driver
-GITHUB_ENV=/home/runner/work/_temp/_runner_file_commands/set_env_58ba0deb-7617-4f5f-81df-281f30b48580
+GITHUB_ENV=/home/runner/work/_temp/_runner_file_commands/set_env_f506667e-7d10-48a0-b76a-15fee3111b5a
 GITHUB_EVENT_PATH=/home/runner/work/_temp/_github_workflow/event.json
-INVOCATION_ID=c3a6272ae82b47c3a6a470c8269a6638
+INVOCATION_ID=f1ff4add0677444585f09682a492101a
 GITHUB_EVENT_NAME=schedule
-GITHUB_RUN_ID=5987878044
+GITHUB_RUN_ID=6134073189
 JAVA_HOME_17_X64=/usr/lib/jvm/temurin-17-jdk-amd64
 ANDROID_NDK_HOME=/usr/local/lib/android/sdk/ndk/25.2.9519653
 CONTEXT_STRATEGY={
@@ -239,7 +239,7 @@ CONTEXT_STRATEGY={
   "job-total": 1,
   "max-parallel": 1
 }
-GITHUB_STEP_SUMMARY=/home/runner/work/_temp/_runner_file_commands/step_summary_58ba0deb-7617-4f5f-81df-281f30b48580
+GITHUB_STEP_SUMMARY=/home/runner/work/_temp/_runner_file_commands/step_summary_f506667e-7d10-48a0-b76a-15fee3111b5a
 HOMEBREW_NO_AUTO_UPDATE=1
 GITHUB_ACTOR=SkPhilipp
 NVM_DIR=/home/runner/.nvm
@@ -267,7 +267,7 @@ ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
 VCPKG_INSTALLATION_ROOT=/usr/local/share/vcpkg
 GITHUB_ACTOR_ID=1235612
 RUNNER_TOOL_CACHE=/opt/hostedtoolcache
-ImageVersion=20230821.1.0
+ImageVersion=20230903.1.0
 DOTNET_NOLOGO=1
 GITHUB_WORKFLOW_SHA=ec79e417fc6287da879e336f2096fd23feb0fb16
 GITHUB_REF_NAME=main
@@ -279,12 +279,12 @@ CONTEXT_SECRETS={
   "github_token": "***"
 }
 GITHUB_REPOSITORY=re-organization-sandbox/sandbox-repo
-CHROME_BIN=/usr/bin/google-chrome
 ANDROID_NDK_ROOT=/usr/local/lib/android/sdk/ndk/25.2.9519653
+CHROME_BIN=/usr/bin/google-chrome
 CONTEXT_VARS=null
 GOROOT_1_18_X64=/opt/hostedtoolcache/go/1.18.10/x64
-GITHUB_RETENTION_DAYS=8
-JOURNAL_STREAM=8:16858
+GITHUB_RETENTION_DAYS=7
+JOURNAL_STREAM=8:16873
 RUNNER_WORKSPACE=/home/runner/work/sandbox-repo
 LEIN_HOME=/usr/local/lib/lein
 LEIN_JAR=/usr/local/lib/lein/self-installs/leiningen-2.10.0-standalone.jar
@@ -302,7 +302,7 @@ GITHUB_ACTION_REF=
 GOROOT_1_19_X64=/opt/hostedtoolcache/go/1.19.12/x64
 GITHUB_WORKFLOW=Event Sink
 DEBIAN_FRONTEND=noninteractive
-GITHUB_OUTPUT=/home/runner/work/_temp/_runner_file_commands/set_output_58ba0deb-7617-4f5f-81df-281f30b48580
+GITHUB_OUTPUT=/home/runner/work/_temp/_runner_file_commands/set_output_f506667e-7d10-48a0-b76a-15fee3111b5a
 AGENT_TOOLSDIRECTORY=/opt/hostedtoolcache
 CONTEXT_JOB={
   "status": "success"
